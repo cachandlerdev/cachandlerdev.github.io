@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+// Fonts
+$font-stack: 'Crimson Text', sans-serif;
+
+// Colors
+$primary-d1: #26014C;
+$primary-d2: #390171;
+$primary-m1: #5402A5;
+$primary-m2: #6E08D4;
+$primary-m3: #8827EA;
+$primary-m4: #A361E5;
+$primary-l1: #BD95E6;
+$primary-l2: #D8C4EC;
+
+$secondary-d1: #010157;
+$secondary-d2: #01018B;
+$secondary-m1: #0202BF;
+$secondary-m2: #0202F4;
+$secondary-m3: #2E2EFD;
+$secondary-m4: #6B6BF5;
+$secondary-l1: #A2A2F3;
+$secondary-l2: #D4D4F6;
+
+$accent-d1: #015B5B;
+$accent-d2: #019090;
+$accent-m1: #02C4C4;
+$accent-m2: #0DEEEE;
+$accent-m3: #46EAEA;
+$accent-m4: #7EE7E7;
+$accent-l1: #B0EAEA;
+$accent-l2: #DCF3F3;
+
+body {
+    font-family: $font-stack;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Custom Navbar Colors */
+.navbar-custom {
+    background-color: $secondary-l2;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: $secondary-d2;
+}
+
+.nav-link {
+    font-style: italic;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: transparent;
+    color: $primary-m3;
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: $primary-m3;
+    border-radius: 0;
+}
+
+.navbar-toggler-icon {
+    // set stroke
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(136, 39, 234, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+h1 {
+    font-size: 96px;
+    text-align: center;
+    font-weight: 700;
+    color: $secondary-l1;
+}
+
+h3 {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    color: $secondary-l1;
+    max-width: 612px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    display: block;
+    height: 5px;
+    border: 0;
+    background-color: $accent-m3;
+    opacity: 100%;
+    padding: 0;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    width: 60%;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+}
+
+#banner {
+    background-image: url(res/main-bg-img.png);
+    //height: auto;
+}
+
+.strip-highlight {
+    min-height: 380px;
+    width: 100%;
+    background-color: $primary-d1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 280px;
+    margin-bottom: 280px;
+}
