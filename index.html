@@ -28,10 +28,10 @@
                         <a class="nav-link" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -42,116 +42,125 @@
     </nav>
 
     <div class="page" id="main-page">
-        <div class="background" id="banner">
-            <div class="strip-highlight">
+        <div class="background" id="main-banner">
+            <div id="banner-strip" class="strip-highlight">
                 <h1>Christopher Chandler</h1>
                 <hr class="bright-spacer-line">
                 <h3>Computer Science and Engineering Student</h3>
             </div>
-            <div class="arrow"></div>
+            <div class="vspacer"></div>
+            <div class="arrow down"></div>
         </div>
     </div>
     <div class="page" id="portfolio-page">
-        <div class="background"></div>
-        <h2>Portfolio</h2>
-        <h5>Here are some of my recent projects.</h5>
-        <div class="showcase-container">
-            <div class="showcase-item-container">
-                <h4>Colette</h4>
-                <img class="showcase-img" src="res/colette-img.png" alt="Color palette application screenshot">
-                <p>A color palette generator web application.</p>
+        <div class="background">
+            <h2>Portfolio</h2>
+            <h5>Here are some of my recent projects.</h5>
+            <div class="showcase-container">
+                <div class="showcase-separator-container">
+                    <div class="showcase-item-container">
+                        <h4>Colette</h4>
+                        <img class="showcase-img" src="res/colette-img.png" alt="Color palette application screenshot">
+                        <p>A color palette generator web application.</p>
+                    </div>
+                    <div class="showcase-item-container">
+                        <h4>Chess (WIP)</h4>
+                        <img class="showcase-img" src="res/stock-photo-chess 1.png" alt="Chess application screenshot">
+                        <p>A work in progress chess engine with a co-op and AI game mode.</p>
+                    </div>
+                    <div class="showcase-item-container">
+                        <h4>Files</h4>
+                        <img class="showcase-img" src="res/files-img.png" alt="File explorer application screenshot">
+                        <p>A file explorer desktop application.</p>
+                    </div>
+                    <div class="showcase-item-container">
+                        <h4>Two Cubes</h4>
+                        <img class="showcase-img" src="res/two-cubes-img.png" alt="A game logo that says two cubes">
+                        <p>A puzzle game made in Unreal Engine.</p>
+                    </div>
+                    <div class="showcase-item-container">
+                        <h4>Sam'n Slime</h4>
+                        <img class="showcase-img" src="res/samnslime-img.png" alt="A game logo that says Sam'n Slime">
+                        <p>A spin on a tower defense game made in Unreal Engine.</p>
+                    </div>
+                    <div class="showcase-item-container">
+                        <h4>To be determined...</h4>
+                        <img class="showcase-img" src="res/question-mark-img.png" alt="An image of a question mark">
+                        <p>More to come!</p>
+                    </div>
+                </div>
             </div>
-            <div class="showcase-item-container">
-                <h4>Chess (WIP)</h4>
-                <img class="showcase-img" src="res/stock-photo-chess 1.png" alt="Chess application screenshot">
-                <p>A work in progress chess engine with a co-op and AI game mode.</p>
+            <hr>
+            <div class="vspacer"></div>
+            <div class="arrow down"></div>
+        </div>
+    </div>
+    <div class="page" id="about-page">
+        <div class="background" id="about-banner">
+            <h2 class="dark-header">About</h2>
+            <div class="strip-highlight about">
+                <div>
+                    <h4>Favorite Languages</h4>
+                    <div id="language-container">
+                        <img class="language-logo" src="res/python-logo.png">
+                        <img class="language-logo" src="res/cpp-logo.png">
+                        <img class="language-logo" src="res/java-logo.png">
+                        <img class="language-logo" src="res/latex-logo.png">
+                        <img class="language-logo" src="res/markdown-logo.png">
+                    </div>
+                </div>
+                <hr>
+                <p id="about-description">Hi! I’m a computer science and engineering student located in California who enjoys learning about and creating new things. Some of my main interests are simulations, designing video games, and bridging the gap between art and logic. Recently, I've been learning about web development, and in the future I'm planning on learning more about graphics programming, shaders, and automata.</p>
             </div>
-            <div class="showcase-item-container">
-                <h4>Files</h4>
-                <img class="showcase-img" src="res/files-img.png" alt="File explorer application screenshot">
-                <p>A file explorer desktop application.</p>
-            </div>
-            <div class="showcase-item-container">
-                <h4>Two Cubes</h4>
-                <img class="showcase-img" src="res/two-cubes-img.png" alt="A game logo that says two cubes">
-                <p>A puzzle game made in Unreal Engine.</p>
-            </div>
-            <div class="showcase-item-container">
-                <h4>Sam'n Slime</h4>
-                <img class="showcase-img" src="res/samnslime-img.png" alt="A game logo that says Sam'n Slime">
-                <p>A spin on a tower defense game made in Unreal Engine.</p>
-            </div>
-            <div class="showcase-item-container">
-                <h4>To be determined...</h4>
-                <img class="showcase-img" src="res/question-mark-img.png" alt="An image of a question mark">
-                <p>More to come!</p>
-            </div>
+            <div class="vspacer"></div>
+            <div class="arrow down"></div>
         </div>
     </div>
     <div class="page" id="blog-page">
-        <div class="background"></div>
-        <h2>Blog</h2>
-        <h5>Feel free to check out my blog, where I discuss technology related topics and explain how to do things with code.</h5>
-        <div class="showcase-container">
-            <div class="showcase-item-container">
-                <h4>Article 1</h4>
-                <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
-                <p>Description of article.</p>
+        <div class="background">
+            <h2>Blog</h2>
+            <h5>Feel free to check out my blog, where I discuss technology related topics and explain how to do things with code.</h5>
+            <div class="showcase-container">
+                <div class="showcase-separator-container">
+                    <div class="showcase-item-container">
+                        <h4>Article 1</h4>
+                        <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
+                        <p>Description of article.</p>
+                    </div>
+                    <div class="showcase-item-container">
+                        <h4>Article 2</h4>
+                        <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
+                        <p>Description of article.</p>
+                    </div>
+                    <div class="showcase-item-container">
+                        <h4>Article 3</h4>
+                        <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
+                        <p>Description of article.</p>
+                    </div>
+                </div>
             </div>
-            <div class="showcase-item-container">
-                <h4>Article 2</h4>
-                <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
-                <p>Description of article.</p>
-            </div>
-            <div class="showcase-item-container">
-                <h4>Article 3</h4>
-                <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
-                <p>Description of article.</p>
-            </div>
+            <a id="blog-button" href="#">See More</a>
+            <hr>
+            <div class="vspacer"></div>
+            <div class="arrow down"></div>
         </div>
-        <div id="blog-button">
-            See More
-        </div>
-        <hr class="spacer-line">
-        <div class="arrow"></div>
-    </div>
-    <div class="page" id="about-page">
-        <img class="background" src="res/landscape-img.png" alt="Landscape background with hills">
-        <h2>About</h2>
-        <div>
-            <div>
-                <h4>Favorite Languages</h4>
-            </div>
-            <div class="vr"></div>
-            <div>
-                <p id="about-description">Hi! I’m a computer science and engineering student located in California who enjoys learning about and creating new things.</p>
-            </div>
-        </div>
-        <div class="arrow"></div>
     </div>
     <div class="page" id="contact-page">
-        <div class="background"></div>
-        <h2>Contact</h2>
-        <h5>Have a question or want to work together? Feel free to reach out!</h5>
-        <div id="contact-info">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div style="float:left;width:50%">Email:</div>
-                            <a style="float:right;width:50%;" href="mailto:cachandlerdev@gmail.com">cachandlerdev@gmail.com</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div style="float:left;width:50%">GitHub:</div>
-                            <a style="float:right;width:50%;" href="https://github.com/cachandlerdev">cachandlerdev</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="background" id="contact-banner">
+            <h2>Contact</h2>
+            <h5>Have a question or want to work together? Feel free to reach out!</h5>
+            <div id="contact-info">
+                <div>
+                    Email:
+                    <a href="mailto:cachandlerdev@gmail.com">cachandlerdev@gmail.com</a>
+                </div>
+                <div>
+                    GitHub:
+                    <a href="https://github.com/cachandlerdev">cachandlerdev</a>
+                </div>
+            </div>
+            <hr>
         </div>
-        <hr class="spacer-line">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
