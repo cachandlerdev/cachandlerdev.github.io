@@ -378,6 +378,8 @@ hr {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    // To fix a 9 year old firefox bug, thanks guys
+    transform: rotateX(0deg);
 }
 
 .flip-card-front {
