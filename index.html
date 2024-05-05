@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Christopher Chandler</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,16 +25,16 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio-page">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about-page">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#blog-page">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact-page">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
                 <h3>Computer Science and Engineering Student</h3>
             </div>
             <div class="vspacer"></div>
-            <div class="arrow down"></div>
+            <a class="arrow down" href="#portfolio-page"></a>
         </div>
     </div>
     <div class="page" id="portfolio-page">
@@ -58,41 +58,83 @@
             <h5>Here are some of my recent projects.</h5>
             <div class="showcase-container">
                 <div class="showcase-separator-container">
-                    <div class="showcase-item-container">
-                        <h4>Colette</h4>
-                        <img class="showcase-img" src="res/colette-img.png" alt="Color palette application screenshot">
-                        <p>A color palette generator web application.</p>
+                    <div class="showcase-item-container flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>Colette</h4>
+                                <img class="showcase-img" src="res/colette-img.png" alt="Color palette application screenshot">
+                                <p>A color palette generator web application.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Python, Flask, Web Development, Solo Project</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="showcase-item-container">
-                        <h4>Chess (WIP)</h4>
-                        <img class="showcase-img" src="res/stock-photo-chess 1.png" alt="Chess application screenshot">
-                        <p>A work in progress chess engine with a co-op and AI game mode.</p>
+                    <div class="showcase-item-container flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>Chess (WIP)</h4>
+                                <img class="showcase-img" src="res/stock-photo-chess 1.png" alt="Chess application screenshot">
+                                <p>A work in progress chess engine with a co-op and AI game mode.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Python, TBD, TBD, Solo Project</p>                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="showcase-item-container">
-                        <h4>Files</h4>
-                        <img class="showcase-img" src="res/files-img.png" alt="File explorer application screenshot">
-                        <p>A file explorer desktop application.</p>
+                    <div class="showcase-item-container flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>Files</h4>
+                                <img class="showcase-img" src="res/files-img.png" alt="File explorer application screenshot">
+                                <p>A file explorer desktop application.</p>
+                            </div>
+                            <div class="flip-card-back">
+                               <p>Java, JavaFX, Desktop Application, Solo Project</p> 
+                            </div>
+                        </div>
                     </div>
-                    <div class="showcase-item-container">
-                        <h4>Two Cubes</h4>
-                        <img class="showcase-img" src="res/two-cubes-img.png" alt="A game logo that says two cubes">
-                        <p>A puzzle game made in Unreal Engine.</p>
+                    <div class="showcase-item-container flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>Two Cubes</h4>
+                                <img class="showcase-img" src="res/two-cubes-img.png" alt="A game logo that says two cubes">
+                                <p>A puzzle game made in Unreal Engine.</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Unreal Engine, Game Development, Game Jam, Solo Project</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="showcase-item-container">
-                        <h4>Sam'n Slime</h4>
-                        <img class="showcase-img" src="res/samnslime-img.png" alt="A game logo that says Sam'n Slime">
-                        <p>A spin on a tower defense game made in Unreal Engine.</p>
+                    <div class="showcase-item-container flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>Sam'n Slime</h4>
+                                <img class="showcase-img" src="res/samnslime-img.png" alt="A game logo that says Sam'n Slime">
+                                <p>A spin on a tower defense game made in Unreal Engine.</p>
+                            </div>                            
+                            <div class="flip-card-back">
+                                <p>C++, Unreal Engine, Game Development, Game Jam, Group Project</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="showcase-item-container">
-                        <h4>To be determined...</h4>
-                        <img class="showcase-img" src="res/question-mark-img.png" alt="An image of a question mark">
-                        <p>More to come!</p>
+                    <div class="showcase-item-container flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>To be determined...</h4>
+                                <img class="showcase-img" src="res/question-mark-img.png" alt="An image of a question mark">
+                                <p>More to come!</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Depends on what I want to learn next!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="vspacer"></div>
-            <div class="arrow down"></div>
+            <a class="arrow down" href="#about-page"></a>
         </div>
     </div>
     <div class="page" id="about-page">
@@ -110,10 +152,10 @@
                     </div>
                 </div>
                 <hr>
-                <p id="about-description">Hi! I’m a computer science and engineering student located in California who enjoys learning about and creating new things. Some of my main interests are simulations, designing video games, and bridging the gap between art and logic. Recently, I've been learning about web development, and in the future I'm planning on learning more about graphics programming, shaders, and automata.</p>
+                <p id="about-description">Hi! I’m a computer science and engineering student located in California who enjoys learning about and creating new things. Some of my main interests are simulating things, designing video games, and bridging the gap between art and logic. Recently, I've been learning about web development, and in the future I'm planning on learning more about graphics programming, shaders, and automata.</p>
             </div>
             <div class="vspacer"></div>
-            <div class="arrow down"></div>
+            <a class="arrow down" href="#blog-page"></a>
         </div>
     </div>
     <div class="page" id="blog-page">
@@ -122,27 +164,33 @@
             <h5>Feel free to check out my blog, where I discuss technology related topics and explain how to do things with code.</h5>
             <div class="showcase-container">
                 <div class="showcase-separator-container">
-                    <div class="showcase-item-container">
-                        <h4>Article 1</h4>
-                        <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
-                        <p>Description of article.</p>
-                    </div>
-                    <div class="showcase-item-container">
-                        <h4>Article 2</h4>
-                        <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
-                        <p>Description of article.</p>
-                    </div>
-                    <div class="showcase-item-container">
-                        <h4>Article 3</h4>
-                        <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
-                        <p>Description of article.</p>
-                    </div>
+                    <a class="showcase-item-container" href="https://medium.com/@cachandler/test-article-2cc10dc78010">
+                        <div class="highlight">
+                            <h4>Test Article</h4>
+                            <img class="showcase-img" src="res/water-splash-clr-shutterstock_258421805.webp" alt="Water splash">
+                            <p>A Medium article for testing purposes.</p>
+                        </div>
+                    </a>
+                    <a class="showcase-item-container" href="https://medium.com/@cachandler/setting-up-neo-vim-for-unity-on-fedora-linux-e4d00ccaee1e">
+                        <div class="highlight">
+                            <h4>Vim for Unity</h4>
+                            <img class="showcase-img" src="res/neovim.webp" alt="Neovim in unity">
+                            <p>A tutorial on setting up Vim for Unity.</p>
+                        </div>
+                    </a>
+                    <a class="showcase-item-container" href="#">
+                        <div class="highlight">
+                            <h4>Article 3</h4>
+                            <img class="showcase-img" src="res/question-mark-img.png" alt="Question mark">
+                            <p>Description of article.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <a id="blog-button" href="#">See More</a>
+            <a id="blog-button" href="https://medium.com/@cachandler">See More</a>
             <hr>
             <div class="vspacer"></div>
-            <div class="arrow down"></div>
+            <a class="arrow down" href="#contact-page"></a>
         </div>
     </div>
     <div class="page" id="contact-page">
@@ -150,14 +198,10 @@
             <h2>Contact</h2>
             <h5>Have a question or want to work together? Feel free to reach out!</h5>
             <div id="contact-info">
-                <div>
-                    Email:
-                    <a href="mailto:cachandlerdev@gmail.com">cachandlerdev@gmail.com</a>
-                </div>
-                <div>
-                    GitHub:
-                    <a href="https://github.com/cachandlerdev">cachandlerdev</a>
-                </div>
+                <div>Email:</div>
+                <a class="contact-link" href="mailto:cachandlerdev@gmail.com">cachandlerdev@gmail.com</a>
+                <div>GitHub:</div>
+                <a class="contact-link" href="https://github.com/cachandlerdev">cachandlerdev</a>
             </div>
             <hr>
         </div>
