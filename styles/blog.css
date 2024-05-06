@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bentham&family=Noto+Sans+Math&display=swap");
 @keyframes navbar-slide {
   0% {
     top: -64px;
@@ -159,4 +160,13 @@ pre {
   border: 1px solid #019090;
   border-radius: 5px;
   padding: 10px;
+}
+
+.math {
+  font-family: "Betham", serif;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=blog.css.map */

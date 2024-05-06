@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bentham&family=Noto+Sans+Math&display=swap");
 @import "colors";
 
 $text-width: 40em;
@@ -125,4 +126,13 @@ pre {
     border: 1px solid $accent-d2;
     border-radius: 5px;
     padding: 10px;
+}
+
+.math {
+    font-family: "Betham", serif;    
+}
+
+.display {
+    display: flex;
+    justify-content: center;
 }
