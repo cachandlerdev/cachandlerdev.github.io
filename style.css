@@ -379,8 +379,9 @@ hr {
   height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 25% 25%;
-     object-position: 25% 25%;
+  -o-object-position: center;
+     object-position: center;
+  background-position: center center;
 }
 
 #blog-button {
