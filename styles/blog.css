@@ -44,6 +44,13 @@ html, body {
   width: 100%;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
 .blog {
   width: 90%;
   max-width: 40em;
@@ -131,6 +138,8 @@ img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  border: 2px solid #BD95E6;
+  border-radius: 5px;
 }
 
 code {
@@ -152,6 +161,7 @@ figcaption {
   text-align: center;
   font-style: italic;
   color: #D4D4F6;
+  padding-top: 5px;
 }
 
 pre {

@@ -10,6 +10,13 @@ html, body {
     width: 100%;
 }
 
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
 .blog {
     width: 90%;
     max-width: $text-width;
@@ -97,6 +104,8 @@ img {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    border: 2px solid $primary-l1;
+    border-radius: 5px;
 }
 
 code {
@@ -118,6 +127,7 @@ figcaption {
     text-align: center;
     font-style: italic;
     color: $secondary-l2;
+    padding-top: 5px;
 }
 
 pre {

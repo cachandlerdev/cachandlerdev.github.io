@@ -43,6 +43,16 @@ html {
   scroll-behavior: smooth;
 }
 
+::-moz-selection {
+  color: #26014C;
+  background: #46EAEA;
+}
+
+::selection {
+  color: #26014C;
+  background: #46EAEA;
+}
+
 body {
   font-family: "Crimson Text", sans-serif;
   font-weight: 400;

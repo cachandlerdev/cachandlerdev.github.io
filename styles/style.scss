@@ -8,9 +8,18 @@ $font-stack: 'Crimson Text', sans-serif;
 // Showcase divider
 $showcase-gap: 40px;
 
-
 html {
     scroll-behavior: smooth;
+}
+
+::-moz-selection {
+    color: $primary-d1;
+    background: $accent-m3;
+}
+
+::selection {
+    color: $primary-d1;
+    background: $accent-m3;
 }
 
 body {

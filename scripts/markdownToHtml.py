@@ -8,7 +8,7 @@ import ntpath
 source must be located in root/blogs/src/ and the output will be placed in 
 root/blogs/ (unless otherwise specified)."""
 template = "template.html"
-source = "medium.md"
+source = "real1.md"
 
 templateLocation = ""
 sourceLocation   = ""
@@ -33,7 +33,10 @@ def main():
     sourcePath = sourceLocation + source
     outputPath = outputLocation + getOutputFileName(sourcePath)
 
-    if (len(sys.argv) >= 2):
+    if len(sys.argv) == 2:
+        if sys.argv[1] == "-u":
+            return updateExistingFiles(templatePath)
+    elif len(sys.argv) == 3:
         if sys.argv[1] == "-u" or sys.argv[2] == "-u":
             return updateExistingFiles(templatePath)
 

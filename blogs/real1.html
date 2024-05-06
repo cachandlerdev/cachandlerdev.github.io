@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First Real Blog Entry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/style.css"> 
+    <link rel="stylesheet" href="../../styles/blog.css"/>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html#">Christopher Chandler</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#portfolio-page">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#about-page">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#blog-page">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#contact-page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="blog-bg">
+        <div class="blog">
+            <h1 id="title">First Real Blog Entry</h1>
+            <p id="author">Christopher Chandler</p>
+            <p id="date">05/06/2024</p>
+            <!--STARTBODY-->
+            <figure>
+            <img src="/res/main-bg-img.png" alt="" /><figcaption>A fancy looking laptop that is entirely unrelated to my blog post, but helps me test out image functionality.</figcaption>
+            </figure>
+            <p>Alright, after finishing up the main functionality of this website and working on the blog feature for a few hours today, I should probably try writing something real for once to test out its various features.</p>
+            <hr />
+            <h1 id="summary">Summary</h1>
+            <p>TLDR: Working on my website, trying to see if this blog feature works now. Going to need a blog list page (and probably a project showcase page too at some point, but not right now), and then I want to get to other projects like a chess engine and more web development.</p>
+            <h2 id="subheading-because-these-look-neat-too">Subheading because these look neat too</h2>
+            <p>You know what, let’s try formatting that in list form to see if that needs any tweaking.</p>
+            <p>TLDR List:</p>
+            <ul>
+            <li>Working on my website</li>
+            <li>Trying to see if the blog works now</li>
+            <li>Going to need a blog list page
+            <ul>
+            <li>Probably also a project showcase page in the future</li>
+            </ul></li>
+            <li>Want to get to other projects
+            <ol type="1">
+            <li>Chess engine</li>
+            <li>More web development with CS50W</li>
+            </ol></li>
+            </ul>
+            <p>List is over now.</p>
+            <h1 id="lets-have-this-be-the-body">Let’s have this be the body</h1>
+            <p>By this point in time, the website is mostly finished. I got the general layout and basic CSS setup a few days ago, and was working for a few hours yesterday on the nice looking animations. Once I finished that, I decided that I would rather not host any blog entries or programming guides on Medium because I’ve had negative experiences with it in the past—namely them deleting half of my “How to use Neovim with Unity on Linux” guide and then ignoring my support ticket—so I thought I might as well implement a blog feature on my own website. However, one of the main drawbacks I have encountered has been related to web hosting. See, normally I would just go with something like Django or Flask and make a full fledged web application, but because I’m using GitHub Pages to host this site for free, I’m limited to good ol’ HTML, CSS, and JavaScript on the front end. I suppose I could always look into something like Google Firebase or some other hosting solution in the future, but for now, that seemed like it would be overkill for a simple portfolio website with a basic blog feature.</p>
+            <p>As a result, I started looking for ways to turn Markdown files into HTML code that I could add to a <code>blogs</code> folder instead. One of the first results I came across was <code>pandoc</code>, which seemed to be a pretty good option. I started messing around with its features, but as the number of command line arguments kept growing, I thought it would probably be a good idea to write a python script to insert Pandoc’s output into a specified HTML template file. All seemed well and good for the next hour or two until I realized that <em>Pandoc already had this feature built in</em>. Nice, I suppose I don’t need to include template functionality in my script.</p>
+            <p>Once I finally got things up and running, there were a number of CSS bugs I had to work out because this blog is piggybacking off of the CSS I wrote for the main website (where I basically show my various projects and leave a contact page for anyone who wants to reach out). Once I got those working, things seemed to be going fairly well, and I decided to upgrade my script to include an “update all” feature, so I wouldn’t have to manually fix things after changing my HTML template file. At that point, it was about time to <strong>actually write something</strong> after spending so much time creating a platform that I could use to write blog posts and programming articles, so voilà. Here I am, hoping that when I run my <code>markdownToHtml.py</code> script, I’ll get a fancy new blog post and not a bunch of Pandoc errors. We’ll have to see.</p>
+            <h1 id="future-projects">Future Projects</h1>
+            <p>Lastly, I guess I can talk about my plans for now. To start, I need to implement some kind of “list of blogs” HTML page that I can automatically update whenever I publish a new article (probably with another Python script because again, I’m using a static website for simplicity’s sake). After that, I’m looking to be done with this website for now and move onto more interesting projects. In particular, I’m planning on putting together a chess engine this summer, which should present a bunch of fun challenges from a technical standpoint. Right now, I’m somewhat torn between making it a desktop app and a browser based game because on the one hand, the web functionality would make it possible to play the game with other people on my phone, but then I would have to look into setting up multiplayer, so we’ll have to see. Besides that, since my regular classes are finishing up in a few weeks, I started taking Harvard’s freely available CS50W to get more familiar with web development, and I need to get back to that pretty soon. (Hmm, I wonder what gave me the inspiration to build this site).</p>
+            <hr />
+            <p>In any case, this is probably good enough for a real blog post, so I’m going to try generating the HTML now and go from there.</p>
+            <!--ENDBODY-->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
