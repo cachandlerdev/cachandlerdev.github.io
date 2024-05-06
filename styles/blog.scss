@@ -1,7 +1,128 @@
+@import "colors";
+
+$text-width: 40em;
+
+@import "animations";
+
+html, body {
+    position: relative;
+    width: 100%;
+}
+
 .blog {
-    width: 80%;
-    max-width: 40em;
+    width: 90%;
+    max-width: $text-width;
     margin-left: auto;
     margin-right: auto;
     margin-top: calc(52px + 200px);
+    color: $accent-l2;
+}
+
+.blog > h1, h2, h3, h4, h5, h6, p, ol, ul, pre, img, blockquote, dl, figcaption {
+    animation-name: wipe-enter-text;
+    animation-duration: calc($wipe-time * 2);
+    animation-iteration-count: 1;
+}
+
+hr {
+    animation-name: wipe-enter-line;
+    animation-duration: calc($wipe-time * 3);
+    animation-iteration-count: 1;
+}
+
+.blog-bg {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: $secondary-d1;
+}
+
+#title {
+    text-align: center;
+    font-size: 64px;
+}
+
+#author {
+    text-align: center;
+    font-weight: 700;
+}
+
+#date {
+    text-align: center;
+    font-style: italic;
+}
+
+.blog > h1, h2, h3, h4, h5, h6 {
+    font-size: 48px;
+    animation-name: wipe-enter-text;
+    animation-duration: $wipe-time;
+    animation-iteration-count: 1;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+code {
+    color: $accent-m2;
+}
+
+a {
+    color: $primary-l1;
+    overflow-wrap: break-word;
+    transition: color 0.8s;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: $accent-m2;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: $secondary-l2;
+}
+
+pre {
+    color: $secondary-l2;
+    background-color: $primary-d1;
+    border: 1px solid $accent-d2;
+    border-radius: 5px;
+    padding: 10px;
 }

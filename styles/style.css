@@ -220,13 +220,19 @@ hr {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
+h1, h2, h5, h6 {
+  animation-name: wipe-enter-text;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
 .strip-highlight > h1, h3, h4, p, #language-container {
   animation-name: wipe-enter-text;
   animation-duration: 2s;
   animation-iteration-count: 1;
 }
 
-.strip-highlight > hr {
+hr {
   animation-name: wipe-enter-line;
   animation-duration: 2s;
   animation-iteration-count: 1;

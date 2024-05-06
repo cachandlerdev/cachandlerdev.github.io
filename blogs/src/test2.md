@@ -1,4 +1,6 @@
-
+% Markdown Syntax
+% Christopher Chandler
+% 05/06/2024
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading

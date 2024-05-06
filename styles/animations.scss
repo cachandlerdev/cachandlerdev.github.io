@@ -1,0 +1,47 @@
+// Navbar animation
+@keyframes navbar-slide {
+    0% {
+        top: -64px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+// Title Animation
+$wipe-time: 1s;
+
+@keyframes wipe-enter {
+    0% {
+        transform: scale(0, 0.025);
+    }
+    50% {
+        transform: scale(1, 0.025);
+    }
+}
+
+@keyframes wipe-enter-text {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes wipe-enter-line {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        transform: scale(0, 1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
