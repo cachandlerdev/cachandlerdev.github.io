@@ -1,8 +1,11 @@
-% First Real Blog Entry
-% Christopher Chandler
-% 05/06/2024
+---
+layout: post
+title:  "First Real Blog Entry"
+date:   2024-05-06
+categories: testing update
+---
 
-![A fancy looking laptop that is entirely unrelated to my blog post, but helps me test out image functionality.](/res/main-bg-img.png)
+![A fancy looking laptop that is entirely unrelated to my blog post, but helps me test out image functionality.](/blog/assets/images/main-bg-img.png)
 
 Alright, after finishing up the main functionality of this website and working on the blog feature for a few hours today, I should probably try writing something real for once to test out its various features.
 

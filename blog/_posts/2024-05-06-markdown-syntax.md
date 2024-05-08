@@ -1,6 +1,9 @@
-% Markdown Syntax
-% Christopher Chandler
-% 05/06/2024
+---
+layout: post
+title:  "Markdown Syntax"
+date:   2024-05-06
+categories: jekyll update
+---
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
