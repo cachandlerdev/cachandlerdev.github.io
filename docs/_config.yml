@@ -27,7 +27,7 @@ email: cachandlerdev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A blog where I discuss technology related topics and explain how to do things
   with code.
-#baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 # ^ commented because weird stuff happens with github pages
 url: "https://cachandlerdev.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
