@@ -336,10 +336,18 @@ hr {
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .flip-card-back > p {
     font-style: italic;
+}
+
+.flip-card-back > a {
+    font-weight: bold;
+    cursor: pointer;
+    color: $primary-l2;
+    text-decoration: underline;
 }
 
 .showcase-item-container:after {
